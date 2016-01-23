@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.javi.contentmusicprovider">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name=".cancion.ProveedorCanciones"
+            android:authorities="com.example.javi.contentmusicprovider.cancion.ProveedorCanciones"
+            android:enabled="true"
+            android:exported= "false" />
+
+        <provider
+            android:name=".disco.ProveedorDiscos"
+            android:authorities="com.example.javi.contentmusicprovider.disco.ProveedorDiscos"
+            android:enabled="true"
+            android:exported= "false" />
+
+        <provider
+            android:name=".interprete.ProveedorInterpretes"
+            android:authorities="com.example.javi.contentmusicprovider.interprete.ProveedorInterpretes"
+            android:enabled="true"
+            android:exported= "false" />
+
+        <activity android:name=".Principal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

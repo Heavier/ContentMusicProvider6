@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ContentMusicProvider</string>
+    <string name="cargando">Cargando canciones...</string>
+    <string name="aceptar">Aceptar</string>
+</resources>
